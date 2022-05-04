@@ -6,9 +6,9 @@ export async function get(request) {
 	singlePageData = await directus.items('blog').readByQuery({
 				search: `${urlSlug}`,
 				fields: ['*'],
-		filter: {
-		status: 'published',
-		}
+				filter: {
+				status: 'published',
+				}
 		});
 
 	const posts = singlePageData.data;
