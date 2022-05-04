@@ -3,9 +3,11 @@ import {
 } from '$lib/connector';
 export async function get() {
 	const directus = await getDirectusClient();
-	let response;
-	response = await directus.items('blog').readByQuery({
+	const response = await directus.items('blog').readByQuery({
 				fields: ['*'],
+				filter: {
+					status: 'published',
+				}
 
 	});
 	const articles = response.data;
