@@ -8,7 +8,7 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "preview": "HOST=0.0.0.0 svelte-kit preview --host",
     "prepare": "svelte-kit sync"
   },
   "devDependencies": {
