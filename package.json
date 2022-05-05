@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "16.13.1"
+    "node": "16.15.0"
   },
   "name": "Sveltekit+Directus+Caprover",
   "version": "0.0.1",
