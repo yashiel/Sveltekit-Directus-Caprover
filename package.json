@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "16.13.1"
+  },
   "name": "Sveltekit+Directus+Caprover",
   "version": "0.0.1",
   "scripts": {
