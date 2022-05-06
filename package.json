@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/adapter-cloudflare": "^1.0.0-next.19",
+    "@sveltejs/adapter-cloudflare": "next",
     "@sveltejs/adapter-node": "next",
-    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "svelte": "3.48.0"
   },

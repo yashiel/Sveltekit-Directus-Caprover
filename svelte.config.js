@@ -1,7 +1,7 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-cloudflare';
 const config = {
 	kit: {
-		adapter: adapter(),
+		adapter: cloudflare(),
 	}
 };
 
