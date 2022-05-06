@@ -1,7 +1,7 @@
-import cloudflare from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-auto';
 const config = {
 	kit: {
-		adapter: cloudflare(),
+		adapter: adapter(),
 		prerender: {
 			enabled: false,
 		}
