@@ -1,5 +1,5 @@
 {
-  "name": "Sveltekit+Directus+Caprover",
+  "name": "sveltekit_directus",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
