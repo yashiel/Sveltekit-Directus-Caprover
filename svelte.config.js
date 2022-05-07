@@ -3,7 +3,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-			enable: true
+			default: true
 		}
 	}
 };
