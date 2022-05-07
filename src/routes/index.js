@@ -12,6 +12,10 @@ export async function get() {
 	});
 	const articles = response.data;
 	return {
+		cache: {
+			"maxage": 300,
+			"public": true
+		},
 		body: {
 			articles
 		}

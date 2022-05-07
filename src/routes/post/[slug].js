@@ -13,6 +13,10 @@ export async function get(request) {
 	const posts = singlePageData.data;
 	const post = posts[0]; 
 	return {
+		cache: {
+			"maxage": 300,
+			"public": true
+		  },
 		body: {
 			post
 		}
