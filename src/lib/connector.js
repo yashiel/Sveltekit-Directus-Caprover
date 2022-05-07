@@ -3,12 +3,7 @@ import {
 } from '@directus/sdk';
 import 'dotenv/config';
 
-const directus = new Directus(process.env.VITE_DIRECTUS_URL, {
-	headers: {
-		"Cache-Control": "no-cache",
-		"max-age": 300
-	}
-});
+const directus = new Directus(process.env.VITE_DIRECTUS_URL);
 async function getDirectusClient() {
 	if (directus.auth.token) return directus;
 
