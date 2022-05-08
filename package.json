@@ -19,7 +19,6 @@
   "type": "module",
   "dependencies": {
     "@directus/sdk": "9.10.0",
-    "dotenv": "16.0.0",
-    "html-minifier": "^4.0.0"
+    "dotenv": "16.0.0"
   }
 }
