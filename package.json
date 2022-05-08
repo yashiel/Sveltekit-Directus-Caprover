@@ -14,12 +14,12 @@
     "@sveltejs/adapter-node": "next",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
-    "html-minifier": "^4.0.0",
     "svelte": "3.48.0"
   },
   "type": "module",
   "dependencies": {
     "@directus/sdk": "9.10.0",
-    "dotenv": "16.0.0"
+    "dotenv": "16.0.0",
+    "html-minifier": "^4.0.0"
   }
 }
