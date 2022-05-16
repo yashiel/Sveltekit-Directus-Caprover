@@ -4,7 +4,7 @@ export async function get(request) {
 	const directus = await getDirectusClient();
 	const singlePageData = await directus.items('blog').readByQuery({
 				search: `${urlSlug}`,
-				fields: ['*'],
+				fields: ['title', 'slug', 'content'],
 				filter: {
 					status: 'published',
 				}
