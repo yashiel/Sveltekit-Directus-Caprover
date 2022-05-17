@@ -14,7 +14,6 @@ export async function get(request) {
 
 	});
 	const articles = response.data;
-	console.log(articles);
 	return {
 		cache: {
 			"maxage": 300,

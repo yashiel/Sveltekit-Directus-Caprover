@@ -1,5 +1,6 @@
 <script>
     export let articles, urlId;
+    let limit = 3;
 </script>
 
 {#each articles as { title, content, slug }}
@@ -7,5 +8,12 @@
     {@html content}
 {/each}
 
-<a sveltekit:prefetch href={`/page/${parseInt(urlId) >= 1 ? parseInt(urlId) - 1 : parseInt(urlId)}`}> Previous Page</a>
-<a sveltekit:prefetch href={`/page/${parseInt(urlId) >= parseInt(urlId) ? parseInt(urlId) + 1 : parseInt(urlId) }`}> Next Page</a>
+
+
+{#if parseInt(urlId) >= 2}
+    <a sveltekit:prefetch href={`/page/${parseInt(urlId) - 1}`}> Previous Page</a>
+{/if}
+{#if articles.length >= limit}
+    <a sveltekit:prefetch href={`/page/${parseInt(urlId) + 1}`}> Next Page</a>
+{/if}
+
