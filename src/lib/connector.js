@@ -5,7 +5,7 @@ import 'dotenv/config';
 
 const directus = new Directus(process.env.VITE_DIRECTUS_URL);
 async function getDirectusClient() {
-	if (directus.auth.token) return directus;
+	if (await directus.auth.token) return directus;
 
 	try {
 		if (process.env.DIRECTUS_EMAIL && process.env.DIRECTUS_PASSWORD) {
